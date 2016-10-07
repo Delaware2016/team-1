@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find My Location</title>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div id="map">
+	<span class="helper">Would you like to share your location?</span>
+	<img id="preloader" src="dog.jpg">
+	</div>
+
+	<a class="button" href="" title="">Find my Location</a>
+
+	<div id="results">
+		<span class="longitude"></span><br>
+        <span class="lattitude"></span><br>
+        <span class="location"></span>
+    </div>
+
+</div><!--End Wrapper-->
+
+
+</body>
+</html>
