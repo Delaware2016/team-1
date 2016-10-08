@@ -1,6 +1,6 @@
 <snippet>
   <content>
-# ${1:Accelerate Delaware - Web Application}
+# Accelerate Delaware - Web Application}
 
 A web application produced to fufill the requirements provided by Accelerate Delaware at Code for Good 2016. The application is meant to be a social platform used to create social groups within Delaware in order to increase overall Delaware citizen involvement within the community. This platform is mainly driven by events and businesses by and for the people.
 
