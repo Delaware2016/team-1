@@ -105,10 +105,6 @@ br {
     line-height: 2.2em;
 }
 
-ol,
-ul {
-    list-style: none;
-}
 input,
 textarea {
     -webkit-font-smoothing: antialiased;
@@ -369,7 +365,7 @@ html[xmlns] .clearfix {
 * html .clearfix {
     height: 1%;
 }
-<<<<<<< HEAD @font-face {
+@font-face {
     font-family: 'Calluna';
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
 }
@@ -567,6 +563,12 @@ br {
 ol,
 ul {
     list-style: none;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
 }
 input,
 textarea {
@@ -728,12 +730,6 @@ a:hover {
 #profiletabs {
     display: block;
     margin-bottom: 4px;
-    height: 50px;
-}
-#profiletabs ul {
-    list-style: none;
-    display: block;
-    width: 70%;
     height: 50px;
 }
 #profiletabls ul li {
@@ -963,8 +959,4 @@ nav a {
 
 nav a:hover {
     background-color: #111;
-}
-
-.nav-item {
-	font-size: 14px;
 }
