@@ -1,153 +1,191 @@
+<!DOCTYPE html>
+<!--
+TEMPLATE
+Name: Zoo Planet
+Version: 1.0
+Created: 23 January 2014
+
+AUTHOR
+Design and code by: http://www.bootshape.com
+Free stock photos by: http://www.bootshape.com
+
+Read full license: http://www.bootshape.com/license.php
+
+CREDITS
+Background: http://subtlepatterns.com/ (extra_clean_paper)
+Fonts: http://www.google.com/fonts (Actor, Duru_Sans)
+
+SUPPORT
+E-mail: bootshape.com@gmail.com
+Contact: http://www.bootshape.com/contact.php
+-->
 <html>
+  <head>
+    <title>Yacht Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Belgrano|Courgette&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-<head>
+    
+    <!--Bootshape-->
+    <link href="css/bootshape.css" rel="stylesheet">
 
-    <!-- Specify the character encoding for the HTML document -->
-    <meta charset="utf-8">
-
-    <!-- Responsivity powered by bootstrap, leave this one near the top of the header. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap Links, see https://getbootstrap.com/getting-started/#download for more info -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
-    <!-- Personal Style Sheet -->
-    <link href="style.css" rel="stylesheet">
-
-	<style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      @font-face{font-family:'Calluna';
- src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
-}
-body {
-	background: url(//subtlepatterns.com/patterns/scribble_light.png);
-  font-family: Calluna, Arial, sans-serif;
-  min-height: 1000px;
-}
-#columns {
-	column-width: 320px;
-	column-gap: 15px;
-  width: 90%;
-	max-width: 1100px;
-	margin: 50px auto;
-}
-
-div#columns figure {
-	background: #fefefe;
-	border: 2px solid #fcfcfc;
-	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-	margin: 0 2px 15px;
-	padding: 15px;
-	padding-bottom: 10px;
-	transition: opacity .4s ease-in-out;
-  display: inline-block;
-  column-break-inside: avoid;
-}
-
-div#columns figure img {
-	width: 100%; height: auto;
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 15px;
-	margin-bottom: 5px;
-}
-
-div#columns figure figcaption {
-  font-size: .9rem;
-	color: #444;
-  line-height: 1.5;
-}
-
-div#columns small { 
-  font-size: 1rem;
-  float: right; 
-  text-transform: uppercase;
-  color: #aaa;
-} 
-
-div#columns small a { 
-  color: #666; 
-  text-decoration: none; 
-  transition: .4s color;
-}
-
-div#columns:hover figure:not(:hover) {
-	opacity: 0.4;
-}
-
-@media screen and (max-width: 750px) { 
-  #columns { column-gap: 0px; }
-  #columns figure { width: 100%; }
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-    </style>
-	
-</head>
-
-<body>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Content -->
     <div class="container">
-        <h3>Welcome John!</h3>
-
-        <div class="container" class="notifications">
-            <h4>Notifications</h4>
-            <p>You have 1 new friend request!</p>
-            <p>You have 1 pending DA$H transaction!</p>
-            <p>3 upcoming events this week.</p>
+      <div class="">
+        <h3 class="">Welcome John!</h3>
+        <p><h4>Notifications</h4> 
+          * You have 1 new friend request!<br>
+          * You have 1 pending DA$H transcation!<br>
+          * 3 upcoming events this week.<br>
+          </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <h3 class="">About</h3>
+          <img src="img/about.jpg" alt="" class="img-responsive">
+          <br>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of.</p>
         </div>
-
-        <div class="container" class="food">
-            <h4>Looking for Food?</h4>
-            <div class="store">Red Bowl</div>
-            <div class="store">Ali Baba</div>
-            <div class="store">Arenas</div>
+        <div class="col-sm-4">
+          <h3 class="">UPCOMING EVENTS!</h3>
+          <div class="event">
+            <div class="text-right date">10/9/2016</div>
+            <p>Brunch @ The Grain</p>
+            <div class="text-right">
+              <a href="#">See more...</a>
+            </div>
+          </div>
+          <div class="event">
+            <div class="text-right date">10/15/2016</div>
+            <p>The Black Keys @ Wells Fargo Center</p>
+            <div class="text-right">
+              <a href="#">See more...</a>
+            </div>
+          </div>
+          <div class="event">
+            <div class="text-right date">10/20/2016</div>
+            <p>Greenbank Mills and Philips Farm Tour</p>
+            <div class="text-right">
+              <a href="#">See more...</a>
+              </div>
+            </div>
+          <div class="event">
+            <div class="text-right date">01/22/2014</div>
+            <p>Porter Robinson and Madeon @ The Electric Factory</p>
+            <div class="text-right">
+              <a href="#">See more...</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div><!-- End Content -->
 
-        <div class="container" class="balance">
-            <h5>Your DA$H Balance: $100</h5>
+
+    <!-- Slide gallery -->
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="col-xs-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+              <h2 align="center">FOOD FEED</h2>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/grain.jpg" alt="">
+              <figcaption align="center">The Grain</figcaption>
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/homegrown.jpg" alt="">
+              <figcaption align="center">Homegrown</figcaption>
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/grottos.jpg" alt="">
+              <figcaption align="center">Grottos</figcaption>
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
         </div>
-
-        <div class="container" class="events">
-            <h4>Upcoming Events</h4>
-            <div class="event">VGTC Extra Life 2016</div>
-            <div class="event">Greenbank Mills and Philips Farm Tour</div>
-            <div class="event">Porter Robinson and Madeon @ the Electric Factory</div>
-            <div class="event">Wilmington and Western Railroad - Colors of Autumn</div>
         </div>
-
-
+      </div><!-- End Slide gallery -->
     </div>
-</body>
 
+        <!-- Content -->
+    <div class="container">
+      <div class="">
+          Your DA$H Balance is currently: $100<br>
+          </p>
+
+              </div>
+            </div>
+<!-- End Content -->
+
+
+    <!-- Thumbnails -->
+    <div class="container thumbs">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/pic1.jpg" alt="" class="img-responsive">
+          <div class="caption">
+            <h3 class="">EVENTS TODAY</h3>
+            <p>Looks like you don't have any events scheduled for today!</p>
+            <div class="btn-toolbar text-center">
+              <a href="#" role="button" class="btn btn-primary pull-right">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/pic2.jpg" alt="" class="img-responsive">
+          <div class="caption">
+            <h3 class="">NEXT EVENT</h3>
+            <p>You have plans to attend brunch @ The Grain on 10/9/2016!</p>
+            <div class="btn-toolbar text-center">
+              <a href="#" role="button" class="btn btn-primary pull-right">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Thumbnails -->
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootshape.js"></script>
+  </body>
 </html>
