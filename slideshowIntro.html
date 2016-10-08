@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
 
+<<<<<<< HEAD
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -70,8 +74,14 @@ body {font-family: Verdana,sans-serif;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-</style>
+</style> 
+</head>
+=======
+>>>>>>> origin/master
 <body>
+
+<div id="header"></div>
+
 <h2>Automatic Slideshow</h2>
 <p>Change image every 2 seconds:</p>
 
@@ -126,5 +136,6 @@ function showSlides() {
 }
 </script>
 
+<div id="footer"></div>
 </body>
 </html>
