@@ -6,7 +6,7 @@
     <!-- Specify the character encoding for the HTML document -->
     <meta charset="utf-8">
 
-    <!-- Responsivity powered by bootstrap, leave this one near the top of the header. -->
+    <!-- Responsivity powered by bootstrap, leave this near the top of the header. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap Links, see https://getbootstrap.com/getting-started/#download for more info -->
@@ -16,15 +16,14 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+	<!-- Personal Style Sheet -->
+    <link href="style.css" rel="stylesheet">
+	
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-
-    <!-- Personal Style Sheet -->
-    <link href="style.css" rel="stylesheet">
 
     <script>
         $(function() {
@@ -33,10 +32,10 @@
         });
     </script>
 
-
 </head>
 
 <body>
+    <footer class="footer">
         <div class="container">
             <div class="btn-group" role="group">
                 <div type="button" class="btn btn-secondary">Social</div>
@@ -45,11 +44,12 @@
                 <div type="button" class="btn btn-secondary">Calendar</div>
                 <div type="button" class="btn btn-secondary">Events</div>
             </div>
+            <div class="container">
+				<p>Posted by: Code for Jobs</p>
+                <p>Contact information: <a href="Accelerate@gmail.com">someone@example.com</a>.</p>
+            </div>
         </div>
-
-        <p>Posted by: Code for Jobs</p>
-        <p>Contact information: <a href="Accelerate@gmail.com">someone@example.com</a>.</p>
-
+    </footer>
 </body>
 
 </html>
