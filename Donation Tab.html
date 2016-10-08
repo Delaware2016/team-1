@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>jQuery UI Spinner - Currency</title>
@@ -30,6 +36,8 @@
 </head>
 <body>
  
+ <div id="header"></div>
+ 
 <p>
   <label for="spinner">Amount to donate:</label>
   <input id="spinner" name="spinner" value="5">
@@ -44,6 +52,6 @@
   </select>
 </p>
  
- 
+ <div id="footer"></div>
 </body>
 </html>
