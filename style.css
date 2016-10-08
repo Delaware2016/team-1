@@ -949,7 +949,7 @@ nav {
     background-color: #333;
 }
 
-nav {
+nav a {
     float: left;
 }
 
@@ -963,4 +963,8 @@ nav a {
 
 nav a:hover {
     background-color: #111;
+}
+
+.nav-item {
+	font-size: 14px;
 }
