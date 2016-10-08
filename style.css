@@ -754,3 +754,36 @@ html[xmlns] .clearfix { display: block; }
 /**end profilestyle **/
 
 >>>>>>> 55726dfafc1b4806e9c8758f4aafd71a550347f3
+
+
+body {
+    background-color: lightblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	border-bottom: 1px solid GhostWhite;
+}
+
+p {
+	font-family: 'Playfair Display', serif;
+}
+
+.snippet img{
+	width: auto;
+	height: 200px;
+	float: left;
+	padding: 10px 10px 10px 10px;
+}
+
+#source{
+	font-size: 1.1em;
+}
+
+#article{
+	font-style: italic;
+}
