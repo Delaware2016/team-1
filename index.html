@@ -23,26 +23,36 @@
 
 
 <!-- Personal Style Sheet -->
-<link href="style.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">
 
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<title>Login</title>
 
-
-<script> 
-$(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-});
-</script>
-
-<title>Accelerate Delaware</title>
 </head>
 <body>
+
 <div id="header"></div>
 
-<div></div>
+  <div class="imgcontainer">
+    <img src="../images/logo.png" alt="Avatar" class="avatar">
+  </div>
 
-<div id="footer"></div>
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <button type="submit">Register</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Forgot Password?</button>
+  </div>
+
+  <div id="footer"></div>
+
 </body>
 </html>
