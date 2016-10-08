@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)file:///C:/Users/Caleb/Desktop/Cool.html -->
-
-<title>W3.CSS</title>
+<head><!-- Specify the character encoding for the HTML document -->
+<meta charset="utf-8">
+	
+<!-- Responsivity powered by bootstrap, leave this one near the top of the header. -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<!-- Bootstrap Links, see https://getbootstrap.com/getting-started/#download for more info -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+<!-- Personal Style Sheet -->
+<link href="style.css" rel="stylesheet">
+
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<title>W3.CSS</title>
+
+</head>
 <body>
 
 <div class="w3-container">
@@ -22,8 +52,6 @@
       </div>
     </li>
   </ul>
-  
-  <p>Tip: You will learn more about navigation bars in a later chapter.</p>
 </div>
 
 </body>
