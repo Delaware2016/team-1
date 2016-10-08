@@ -3,33 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html">
-
+  <title>User Profile with Content Tabs - Design Shack Demo</title>
+  <meta name="author" content="Jake Rocheleau">
   <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
   <link rel="icon" href="http://designshack.net/favicon.ico">
-  <link rel="stylesheet" type="text/css" media="all" href="style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="profilestyles.css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 </head>
 
 <body>
-<nav>
-<ul>
-  <li><a onclick="location.href = 'social.html';">Social</a></li>
-  <li><a onclick="location.href = 'Donation.html';">Dash</a></li>
-  <li><a onclick="location.href = 'profile.html';">Profile</a></li>
-  <li><a onclick="location.href = 'events.html';">Events</a></li>
-  <li><a onclick="location.href = 'calendar.html';">Calendar</a></li>
-  <li><a onclick="location.href = 'Jobs.html';">Jobs</a></li>
-</ul>
-</nav>
+  <div id="topbar">
+  <a href="http://designshack.net">Back to Design Shack</a>
+  </div>
   
   <div id="w">
-
     <div id="content" class="clearfix">
-      <div id="userphoto"><img src="images/avatar.png" width="150" height="150"alt="default avatar"></div>
-      <h1>John Doe</h1>
+      <div id="userphoto" style="width:150px;height:150px"><img src="images/avatar.png" alt="default avatar"></div>
+      <h1>Minimal User Profile Layout</h1>
 
       <nav id="profiletabs">
-        <ul class="clearfix"  >
+        <ul class="clearfix">
           <li><a href="#bio" class="sel">Bio</a></li>
           <li><a href="#activity">Activity</a></li>
           <li><a href="#friends">Friends</a></li>
@@ -38,39 +31,41 @@
       </nav>
       
       <section id="bio">
-        <p>Hi my name is John Doe my I am 21 years old and attend the University of Delaware.</p>
+        <p>Various content snippets courtesy of <a href="http://bluthipsum.com/">Bluth Ipsum</a>.</p>
         
-        <p>I am majoring in Computer Science and I am a Senior, I am orginally from the Newark area as well.</p>
+        <p>Can't a guy call his mother pretty without it seeming strange? Amen. I think that's one of Mom's little fibs, you know, like I'll sacrifice anything for my children.</p>
         
-        <p>My interests include Technology,Science,and Music </p>
+        <p>She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. I run a pretty tight ship around here. With a pool table.</p>
       </section>
       
       <section id="activity" class="hidden">
         <p>Most recent actions:</p>
         
-        <p class="activity">@10:15AM - Made an Event</p>
+        <p class="activity">@10:15PM - Submitted a news article</p>
         
-        <p class="activity">@8:15PM - Went to the Grain</p>
+        <p class="activity">@9:50PM - Submitted a news article</p>
         
-        <p class="activity">@4:30PM - Added <strong>Joey</strong> as a friend</p>
+        <p class="activity">@8:15PM - Posted a comment</p>
         
-        <p class="activity">@12:30PM - Went to Grottos</p>
+        <p class="activity">@4:30PM - Added <strong>someusername</strong> as a friend</p>
+        
+        <p class="activity">@12:30PM - Submitted a news article</p>
       </section>
       
       <section id="friends" class="hidden">
         <p>Friends list:</p>
         
-       
-          <li><a href="#"><img src="images/avatar.png" width="22" height="22"> Joey</a></li>
+        <ul id="friendslist" class="clearfix">
+          <li><a href="#"><img src="images/avatar.png" width="22" height="22"> Username</a></li>
           <li><a href="#"><img src="images/avatar.png" width="22" height="22"> SomeGuy123</a></li>
           <li><a href="#"><img src="images/avatar.png" width="22" height="22"> PurpleGiraffe</a></li>
-        
+        </ul>
       </section>
       
       <section id="settings" class="hidden">
         <p>Edit your user settings:</p>
         
-        <p class="setting"><span>E-mail Address <img src="images/edit.png" alt="*Edit*"></span> mynameisjohndoe57@gmail.com</p>
+        <p class="setting"><span>E-mail Address <img src="images/edit.png" alt="*Edit*"></span> lolno@gmail.com</p>
         
         <p class="setting"><span>Language <img src="images/edit.png" alt="*Edit*"></span> English(US)</p>
         
