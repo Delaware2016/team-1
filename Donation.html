@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,15 +67,55 @@ li a:hover {
 
 <h1 tab</h1> <! donation tab things > 
 
-<p >Current Balance $100.00</p>
+<p >Dash Balance $100.00</p>
 <div class="imgcontainer">
   <img src="Delladollar.jpg" alt="Avatar" class="avatar">
 </div>
-<p >Past transactions</p>
-<p >Cheeburger $12.10</p>
-<p >Arenas $12.10</p>
-<p >Grain $7.80</p>
-<p >Chipotle $10.58</p>
+
+
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+
+<table style="width:70%">
+  <tr>
+    <th>Date</th>
+    <th>Recent Purchases</th>
+    <th>Amount</th>
+  </tr>
+  <tr>
+    <th>10/2/16</td>
+    <th>Chipotle</td>
+    <th>-$9.35</td>
+  </tr>
+  <tr>
+    <th>10/1/16</td>
+    <th>Dollar Store</td>
+    <th>-$5.00</td>
+  </tr>
+  <tr>
+    <th>9/28/16</td>
+    <th>Cheeburger</td>
+    <th>-$12.80</td>
+  </tr>
+    <tr>
+    <th>9/25/16</td>
+    <th>Arenas</td>
+    <th>-$7.50</td>
+  </tr>
+    <tr>
+    <th>9/18/16</td>
+    <th>Grain</td>
+    <th>-$15.35</td>
+  </tr>
+</table>
+
+  
  
 <p>
   <label for="spinner">Amount to donate:</label>
@@ -89,5 +131,9 @@ li a:hover {
   </select>
 </p>
  
+<button type="button" onclick="alert('Hello world!')">Submit</button>
+
+
+
 </body>
 </html>
