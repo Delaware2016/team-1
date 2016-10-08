@@ -38,35 +38,32 @@
 </head>
 
 <body>
-    <ul>
-        <li><a onclick="location.href = 'social.html';">Social</a>
-        </li>
-        <li><a onclick="location.href = 'Donation.html';">Dash</a>
-        </li>
-        <li><a onclick="location.href = 'profile.html';">Profile</a>
-        </li>
-        <li><a onclick="location.href = 'events.html';">Events</a>
-        </li>
-        <li><a onclick="location.href = 'calendar.html';">Calendar</a>
-        </li>
-        <li><a onclick="location.href = 'Jobs.html';">Jobs</a>
-        </li>
-    </ul>
-    <div class="container center-block">
-        <div class="img-fluid ">
-            <img src="images/logo.png" alt="Avatar" class="avatar">
-        </div>
 
-        <div class="input-group">
-            <span class="input-group-addon">Username</span>
-            <input type="text" class="form-control" placeholder="Enter Username" name="uname" required>
-			<br>
-            <span class="input-group-addon">Password</span>
-            <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
-        </div>
-        <div>
-		<button type="submit" class="btn btn-success">Login</button>
-        <button type="submit" class="btn btn-success">Register</button>
+<ul>
+  <li><a onclick="location.href = 'social.html';">Social</a></li>
+  <li><a onclick="location.href = 'Donation.html';">Dash</a></li>
+  <li><a onclick="location.href = 'profile.html';">Profile</a></li>
+  <li><a onclick="location.href = 'events.html';">Events</a></li>
+  <li><a onclick="location.href = 'calendar.html';">Calendar</a></li>
+  <li><a onclick="location.href = 'Jobs.html';">Jobs</a></li>
+</ul>
+    <div id="header"></div>
+
+    <div class="img-fluid">
+        <img src="images/logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <label><b>Username</b>
+        </label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label><b>Password</b>
+        </label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" onclick="location.href = 'social.html';"class="btn btn-success">Login</button>
+        <button type="submit" onclick="location.href = 'survey.html';"class="btn btn-success">Register</button>
         <input type="checkbox" class="form-check-input" checked="checked"> Remember me
         <div class="container" style="background-color:#f1f1f1">
             <button type="button" class="btn btn-danger">Forgot Password?</button>
