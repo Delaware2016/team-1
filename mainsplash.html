@@ -1,35 +1,153 @@
 <html>
+
+<head>
+
+    <!-- Specify the character encoding for the HTML document -->
+    <meta charset="utf-8">
+
+    <!-- Responsivity powered by bootstrap, leave this one near the top of the header. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Links, see https://getbootstrap.com/getting-started/#download for more info -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!-- Personal Style Sheet -->
+    <link href="style.css" rel="stylesheet">
+
+	<style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @font-face{font-family:'Calluna';
+ src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
+}
+body {
+	background: url(//subtlepatterns.com/patterns/scribble_light.png);
+  font-family: Calluna, Arial, sans-serif;
+  min-height: 1000px;
+}
+#columns {
+	column-width: 320px;
+	column-gap: 15px;
+  width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+}
+
+div#columns figure {
+	background: #fefefe;
+	border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding: 15px;
+	padding-bottom: 10px;
+	transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
+div#columns figure img {
+	width: 100%; height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+  font-size: .9rem;
+	color: #444;
+  line-height: 1.5;
+}
+
+div#columns small { 
+  font-size: 1rem;
+  float: right; 
+  text-transform: uppercase;
+  color: #aaa;
+} 
+
+div#columns small a { 
+  color: #666; 
+  text-decoration: none; 
+  transition: .4s color;
+}
+
+div#columns:hover figure:not(:hover) {
+	opacity: 0.4;
+}
+
+@media screen and (max-width: 750px) { 
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+    </style>
+	
+</head>
+
 <body>
+    <div class="container">
+        <h3>Welcome John!</h3>
 
-<h3>Welcome John!</h3>
+        <div class="container" class="notifications">
+            <h4>Notifications</h4>
+            <p>You have 1 new friend request!</p>
+            <p>You have 1 pending DA$H transaction!</p>
+            <p>3 upcoming events this week.</p>
+        </div>
 
-<div class="container" class="notifications">
-<h4>Notifications</h4>
-<p>You have 1 new friend request!</p>
-<p>You have 1 pending DA$H transaction!</p>
-<p>3 upcoming events this week.</p>
-</div>
+        <div class="container" class="food">
+            <h4>Looking for Food?</h4>
+            <div class="store">Red Bowl</div>
+            <div class="store">Ali Baba</div>
+            <div class="store">Arenas</div>
+        </div>
 
-<div class="container" class="food">
-<h4>Looking for Food?</h4>
-<div class="store">Red Bowl</div>
-<div class="store">Ali Baba</div>
-<div class="store">Arenas</div>
-</div>
+        <div class="container" class="balance">
+            <h5>Your DA$H Balance: $100</h5>
+        </div>
 
-<div class="container" class="balance">
-<h5>Your DA$H Balance: $100</h5>
-</div>
-
-<div class="container" class="events">
-<h4>Upcoming Events</h4>
-<div class="event">VGTC Extra Life 2016</div>
-<div class="event">Greenbank Mills and Philips Farm Tour</div>
-<div class="event">Porter Robinson and Madeon @ the Electric Factory</div>
-<div class="event">Wilmington and Western Railroad - Colors of Autumn</div>
-</div>
+        <div class="container" class="events">
+            <h4>Upcoming Events</h4>
+            <div class="event">VGTC Extra Life 2016</div>
+            <div class="event">Greenbank Mills and Philips Farm Tour</div>
+            <div class="event">Porter Robinson and Madeon @ the Electric Factory</div>
+            <div class="event">Wilmington and Western Railroad - Colors of Autumn</div>
+        </div>
 
 
-</div>
+    </div>
 </body>
+
 </html>
