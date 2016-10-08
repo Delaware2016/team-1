@@ -25,12 +25,7 @@
 <!-- Personal Style Sheet -->
 <link href="style.css" rel="stylesheet">
 	
-<script> 
-$(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-});
-</script> 
+
 	
 </head>
 <body>
@@ -87,25 +82,7 @@ $(function(){
   <input type="button" onclick="location.href = 'mainsplash.html';"value="Submit"><br><br>
 </form>
 
-<script>
-function defineCookies(form){
-  makeCookie(form[0].fname.name, form[0].fname.value);
-  makeCookie(form[0].lname.name, form[0].lname.value);
-  makeCookie(form[0].email.name, form[0].email.value);
-  makeCookie(form[0].user.name, form[0].user.value);
-  makeCookie(form[0].pass.name, form[0].pass.value);
-  makeCookie(form[0].use.name, form[0].use.value);
-  makeCookie(form[0].live.name, form[0].live.value);
-  makeCookie(form[0].work.name, form[0].work.value);
-  makeCookie(form[0].time.name, form[0].time.value);
-  makeCookie(form[0].time.name, form[0].time.value);
-  makeCookie(form[0].interest.name, form[0].interest.value);
-    makeCookie(form[0].day.name, form[0].day.value);
-}
-function makeCookie(cname, cvalue) {
-  document.cookie = cname + "=" + cvalue;
-}
-</script>
+
 </div>
 <div id="footer"></div>
 </body>
