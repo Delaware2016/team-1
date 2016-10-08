@@ -1,4 +1,59 @@
-@-ms-viewport {
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+img-fluid {
+	
+	
+}
+/*
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #111;
+} 
+
+ @-ms-viewport {
     width: device-width;
 }
 form {
@@ -45,7 +100,6 @@ span.psw {
     float: right;
     padding-top: 16px;
 }
-/* Change styles for span and cancel button on extra small screens */
 
 @media screen and (max-width: 300px) {
     span.psw {
@@ -64,7 +118,6 @@ body {
     background: #f0f0f0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #313131;
-    font-size: 62.5%;
     line-height: 1;
 }
 ::selection {
@@ -77,25 +130,21 @@ body {
     background: #a4dcec;
 }
 ::-webkit-input-placeholder {
-    /* WebKit browsers */
     
     color: #ccc;
     font-style: italic;
 }
 :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
     
     color: #ccc;
     font-style: italic;
 }
 ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
     
     color: #ccc;
     font-style: italic;
 }
 :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
     
     color: #ccc !important;
     font-style: italic;
@@ -158,7 +207,7 @@ img {
 #topbar a:hover {
     opacity: 1;
 }
-/** typography **/
+
 
 h1 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -227,7 +276,6 @@ a:hover {
     display: block;
     text-align: center;
 }
-/** page structure **/
 
 #w {
     display: block;
@@ -260,7 +308,6 @@ a:hover {
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-/** profile nav links **/
 
 #profiletabs {
     display: block;
@@ -302,7 +349,6 @@ a:hover {
     background: #fff;
     border-color: #d1cdb5;
 }
-/** profile content sections **/
 
 .hidden {
     display: none;
@@ -346,7 +392,6 @@ a:hover {
     float: left;
     margin-right: 5px;
 }
-/** clearfix **/
 
 .clearfix:after {
     content: ".";
@@ -362,7 +407,7 @@ a:hover {
 html[xmlns] .clearfix {
     display: block;
 }
-* html .clearfix {
+html .clearfix {
     height: 1%;
 }
 @font-face {
@@ -427,7 +472,6 @@ div#columns:hover figure:not(:hover) {
     }
 }
 ======
-/** slideshow style start **/
 
 * {
     box-sizing: border-box
@@ -438,25 +482,21 @@ body {
 .mySlides {
     display: none
 }
-/* Slideshow container */
 
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
-/* Caption text */
 
 .text {
     color: #f2f2f2;
-    font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
 }
-/* Number text (1/3 etc) */
 
 .numbertext {
     color: #f2f2f2;
@@ -465,7 +505,6 @@ body {
     position: absolute;
     top: 0;
 }
-/* The dots/bullets/indicators */
 
 .dot {
     height: 13px;
@@ -479,7 +518,6 @@ body {
 .active {
     background-color: #717171;
 }
-/* Fading animation */
 
 .fade {
     -webkit-animation-name: fade;
@@ -503,15 +541,6 @@ body {
         opacity: 1
     }
 }
-/* On smaller screens, decrease text size */
-
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
-    }
-}
-/** end slideshow intro **/
-/**start profilestyle **/
 
 html {
     overflow-y: scroll;
@@ -520,7 +549,6 @@ body {
     background: #f0f0f0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #313131;
-    font-size: 62.5%;
     line-height: 1;
 }
 ::selection {
@@ -533,25 +561,21 @@ body {
     background: #a4dcec;
 }
 ::-webkit-input-placeholder {
-    /* WebKit browsers */
     
     color: #ccc;
     font-style: italic;
 }
 :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
     
     color: #ccc;
     font-style: italic;
 }
 ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
     
     color: #ccc;
     font-style: italic;
 }
 :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
     
     color: #ccc !important;
     font-style: italic;
@@ -560,16 +584,7 @@ br {
     display: block;
     line-height: 2.2em;
 }
-ol,
-ul {
-    list-style: none;
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
 
-}
 input,
 textarea {
     -webkit-font-smoothing: antialiased;
@@ -623,11 +638,9 @@ img {
 #topbar a:hover {
     opacity: 1;
 }
-/** typography **/
 
 h1 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 2.5em;
     line-height: 1.5em;
     letter-spacing: -0.05em;
     margin-bottom: 20px;
@@ -692,7 +705,6 @@ a:hover {
     display: block;
     text-align: center;
 }
-/** page structure **/
 
 #w {
     display: block;
@@ -725,7 +737,6 @@ a:hover {
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-/** profile nav links **/
 
 #profiletabs {
     display: block;
@@ -761,7 +772,6 @@ a:hover {
     background: #fff;
     border-color: #d1cdb5;
 }
-/** profile content sections **/
 
 .hidden {
     display: none;
@@ -805,7 +815,6 @@ a:hover {
     float: left;
     margin-right: 5px;
 }
-/** clearfix **/
 
 .clearfix:after {
     content: ".";
@@ -824,7 +833,6 @@ html[xmlns] .clearfix {
 * html .clearfix {
     height: 1%;
 }
-/**end profilestyle **/
 
 body {
     background-color: lightblue;
@@ -856,8 +864,6 @@ p {
 #article {
     font-style: italic;
 }
-
-/** Start of Star Rating style**/
 	
 	.rating {
     float:left;
@@ -865,7 +871,7 @@ p {
 
 /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
    follow these rules. Every browser that supports :checked also supports :not(), so
-   it doesn’t make the test unnecessarily selective */
+   it doesn’t make the test unnecessarily selective
 .rating:not(:checked) > input {
     position:absolute;
     top:-9999px;
@@ -914,49 +920,23 @@ p {
     top:2px;
     left:2px;
 }
-/** End of Star Rating styles **/
 
 
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
 }
 
-/*header styles */
-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
 
-nav a {
-    float: left;
-}
 
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #111;
-}
+*/
