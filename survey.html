@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Welcome to Accelerate Delaware!</h2>
+<p>This is a brief questionnaire in order for us to better understand your interests and to better connect you to events and organizations in your local area.</p>
+
+<form id="frm1" action="form_action.asp">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  Email: <input type="text" name="email"><br>
+  <br>
+  Username: <input type="text" name="user"><br>
+  Password: <input type="password" name="pass"><br>
+  <br>
+    What is your primary use for APPNAME?<br>
+  <input type="radio" name="use" value="business"> Business<br>
+  <input type="radio" name="use" value="personal"> Personal<br>
+  <br>
+  Do you live in Delaware?<br>
+  <input type="radio" name="live" value="true"> Yes<br>
+  <input type="radio" name="live" value="false"> No<br>
+  <br>
+  Do you work in Delaware?<br>
+  <input type="radio" name="work" value="true"> Yes<br>
+  <input type="radio" name="work" value="false"> No<br>
+  <br>
+  How long is your daily commute to work?<br>
+  <input type="radio" name="time" value="low"> Less than 30 mins<br>
+  <input type="radio" name="time" value="med"> 30 mins - 1 hour<br>
+  <input type="radio" name="time" value="high"> 1+ hour<br>
+  <br>
+  Which of the following are you interested in?<br>
+  <input type="checkbox" name="interest" value="music"> Music<br>
+  <input type="checkbox" name="interest" value="film"> Film & Media<br>
+  <input type="checkbox" name="interest" value="food"> Food & Drink<br>
+  <input type="checkbox" name="interest" value="business"> Business<br>
+  <input type="checkbox" name="interest" value="sport"> Sports<br>
+  <input type="checkbox" name="interest" value="sci"> Science & Technology<br>
+  <input type="checkbox" name="interest" value="travel"> Travel & Outdoors<br>
+  <input type="checkbox" name="interest" value="health"> Health & Fitness<br>
+  <br>
+  What days of the week are you most available?<br>
+  <input type="checkbox" name="day" value="monday"> Monday<br>
+  <input type="checkbox" name="day" value="tuesday"> Tuesday<br>
+  <input type="checkbox" name="day" value="wednesday"> Wednesday<br>
+  <input type="checkbox" name="day" value="thursday"> Thursday<br>
+  <input type="checkbox" name="day" value="friday"> Friday<br>
+  <input type="checkbox" name="day" value="saturday"> Saturday<br>
+  <input type="checkbox" name="day" value="sunday"> Sunday<br>
+  <br>
+  <input type="button" onclick="myFunction()" value="Submit"><br><br>
+</form>
+
+<script>
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+</script>
+
+</body>
+</html>
