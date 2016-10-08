@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="https://cdn.jsdelivr.net/alasql/0.3/alasql.min.js"></script>
+
+<font size="5">First Name:</font><br><input type="text" id="FirstName" value="">
+<br>
+<br>
+<font size="5">Last Name:</font><br><input type="text" id="LastName" value="">
+<br>
+<br>
+<font size="5">Email:</font><br><input type="text" id="email" value="">
+<br>
+<br>
+<font size="5">Stree Address:</font><br><input type="text" id="Adr" value="">
+<br>
+<br>
+<font size="5">City:</font><br><input type="text" id="City" value="">
+<br>
+<br>
+<font size="5">State:</font><br><input type="text" id="State" value="">
+<br>
+<br>
+<font size="5">Zip Code:</font><br><input type="text" id="Zip" value="">
+<br>
+<br>
+<font size="5">Username:</font><br><input type="text" id="Username" value="">
+<br>
+<br>
+<font size="5">Password:</font><br><input type="text" id="password" value="">
+<br>
+<input type="submit" value="Next" onclick="write_to_csv()">
+
+
+
+</body>
+<script>
+function write_to_csv() {
+  var data = [document.getElementById("FirstName").value,document.getElementById("LastName").value,document.getElementById("email").value,document.getElementById("Adr").value,
+  			document.getElementById("City").value,document.getElementById("State").value,document.getElementById("Zip").value,document.getElementById("Username").value,document.getElementById("password").value];
+  var csv = '';
+    data.forEach(function(row) {
+            csv += row + ",";
+    });
+ 
+    console.log(csv);
+    var hiddenElement = document.createElement('a');
+    hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = '~/Desktop/people.csv';
+    hiddenElement.click();
+
+}
+</script>
+</html>
+
